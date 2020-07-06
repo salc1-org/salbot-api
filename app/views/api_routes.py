@@ -1,5 +1,5 @@
 from flask import Blueprint
-from .api_routes import UserListResource, UserResource
+from .user_api import UserListResource, UserResource
 from app.extensions import api
 api_blueprint = Blueprint("api", __name__, url_prefix='/v1')
 

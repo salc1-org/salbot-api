@@ -6,3 +6,4 @@ flask-marshmallow
 flask-restful
 flask-bootstrap
 psycopg2
+marshmallow-sqlalchemy
