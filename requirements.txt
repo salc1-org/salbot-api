@@ -1,0 +1,8 @@
+flask
+Flask-SQLAlchemy
+python-dotenv
+Flask-HTTPAuth
+flask-marshmallow
+flask-restful
+flask-bootstrap
+psycopg2
