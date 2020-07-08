@@ -6,6 +6,7 @@ __pycache__/
 # C extensions
 *.so
 
+# Editor config
 .vscode/
 .idea/
 
@@ -109,7 +110,6 @@ celerybeat.pid
 .venv
 .env/
 venv/
-.env/
 env.bak/
 venv.bak/
 

@@ -1,9 +1,5 @@
 flask
-Flask-SQLAlchemy
+sqlalchemy
 python-dotenv
-Flask-HTTPAuth
-flask-marshmallow
-flask-restful
-flask-bootstrap
 psycopg2
-marshmallow-sqlalchemy
+git+git://github.com/tag-epic/datadriver.git
