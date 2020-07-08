@@ -1,0 +1,5 @@
+# Automatically reloads the script and logs sql commands.
+debug=false
+
+# Database uri to connect to
+database_uri=sqlite://database.db
