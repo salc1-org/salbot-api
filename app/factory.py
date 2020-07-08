@@ -7,7 +7,7 @@ import logging
 from .blueprints import load as load_blueprints
 
 app = Flask(__name__)
-logger = logging.getLogger("api.launcher")
+logger = logging.getLogger("api.factory")
 
 os.chdir("app")
 
