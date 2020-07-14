@@ -5,6 +5,7 @@ from datetime import datetime
 
 from datadriver import DatabaseClient, models
 from flask import Blueprint, current_app, jsonify, request
+from app.utilities import require_authentication
 
 blueprint = Blueprint("bans", __name__, url_prefix="/bans")
 
@@ -19,6 +20,7 @@ def get_bans():
 
 
 @blueprint.route("/edit", methods=["PUT"])
+@require_authentication
 def add_ban():
     db: DatabaseClient = current_app.db
     data = request.json

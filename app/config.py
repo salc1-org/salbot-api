@@ -24,6 +24,7 @@ def bool_converter(text: str) -> bool:
 try:
     DEBUG = bool_converter(env.get("debug", True))
     DATABASE_URI = env["database_uri"]
+    API_TOKEN = env["api_token"]
 except KeyError as e:
     logger.critical(f"Missing required config values. Missing setting: {e.args[0]}")
     raise SystemExit()

@@ -3,3 +3,6 @@ debug=false
 
 # Database uri to connect to
 database_uri=sqlite://database.db
+
+# Authentication
+api_token=exampletoken1234
