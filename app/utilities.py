@@ -12,6 +12,6 @@ def require_authentication(func):
     @wraps(func)
     def inner_auth():
         if request.headers.get("Authorization", None) != config.API_TOKEN:
-            return jsonify(success=False, message="Unauthorized")
+            return jsonify(success=False, message="Unauthorized"), 401
         return func()
     return inner_auth
