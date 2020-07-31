@@ -58,7 +58,8 @@ def mark_punishment_as_expired():
         return jsonify(success=False, message="Invalid body."), 400
 
     try:
-        db.session.query(models.Punishment).update({"expired": True})
+        db.session.query(models.Punishment).filter(models.Punishment.punishment_id == punishment_id).update(
+            {"expired": True})
         db.save()
         return jsonify(success=True)
     except:
