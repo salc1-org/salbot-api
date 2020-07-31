@@ -6,7 +6,7 @@ from datetime import datetime
 from datadriver import DatabaseClient, models
 from flask import Blueprint, current_app, jsonify, request
 from app.utilities import require_authentication
-from uuid import UUID
+from uuid import uuid4
 
 blueprint = Blueprint("bans", __name__, url_prefix="/punishments")
 
@@ -26,7 +26,7 @@ def add_punishment():
     db: DatabaseClient = current_app.db
     data = request.json
     try:
-        punishment_id = UUID()
+        punishment_id = str(uuid4())
         punishment_type = data["punishment_type"]
         punished_id = int(data["punished_id"])
         moderator_id = int(data["moderator_id"])
