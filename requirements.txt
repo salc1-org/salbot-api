@@ -2,4 +2,4 @@ flask
 sqlalchemy
 python-dotenv
 psycopg2
-git+git://github.com/tag-epic/datadriver.git
+git+git://github.com/tag-epic/salbot-datadriver.git
